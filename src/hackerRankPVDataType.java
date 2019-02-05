@@ -1,3 +1,6 @@
+//Vincent Nguyen
+//This program prints out results based on datatypes.
+
 
 public class hackerRankPVDataType {
 
