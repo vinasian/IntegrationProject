@@ -12,12 +12,12 @@ public class calculatorJav {
     num1 = input.nextInt();
     num2 = input.nextInt();
     System.out.println(
-        "Enter the corresponding number for the operation. /n"
-        + "1. Addition /n"
-        + "2. Substraction /n"
-        + "3. Multiplication /n"
-        + "4. Division /n"
-        + "5. Powers.");
+        "Enter the corresponding number for the operation. \n"
+        + "1. Addition \n"
+        + "2. Substraction \n"
+        + "3. Multiplication \n"
+        + "4. Division \n"
+        + "5. Powers ");
     String stateAns = "The answer is ";
     int choose;
     choose = input.nextInt();
