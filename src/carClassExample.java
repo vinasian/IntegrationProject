@@ -1,9 +1,9 @@
 
-public class carClassExample { //fields are private
-  
+public class carClassExample { // fields are private
+
   private String color;
   private int year;
-  
+
   public String getColor() {
     return color;
   }
