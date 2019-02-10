@@ -49,10 +49,10 @@ public class calculatorJav {
     }
   }
 
-  public static boolean realNumber(String testN1, String testN2) {
+  public static boolean realNumber(String testNum1, String testNum2) {
     try {
-      Double.parseDouble(testN1);
-      Double.parseDouble(testN2);
+      Double.parseDouble(testNum1);
+      Double.parseDouble(testNum2);
     } catch (NumberFormatException infal) {
       return false;
     }

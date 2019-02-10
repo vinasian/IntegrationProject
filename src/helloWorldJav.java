@@ -1,5 +1,5 @@
 // Vincent Nguyen
-// First program in Java, it simply prints out Hello worlds!
+// First program in Java, it simply prints out Hello world?
 
 public class helloWorldJav {
 

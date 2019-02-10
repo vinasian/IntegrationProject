@@ -1,3 +1,6 @@
+//Vincent Nguyen
+//Class example
+
 
 public class carClassExample { // fields are private
 
