@@ -88,3 +88,10 @@ public class calculatorJav {
 // Scope refers to variables and methods from one part of a program to another
 // A variable used to store info and can be referenced in a program
 
+/*This calculator uses int, double, String, boolean.
+ * the int is used for the case code when choosing an operation
+ * double is the input, the number that is to be calculated
+ * string is to make a statement then the answer to save time.
+ * string is also used as the input type so the boolean function can work.
+ * boolean here is used to check whether the input is a number.
+ */
