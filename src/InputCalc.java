@@ -2,49 +2,33 @@
 // Operation Class
 // Methods of operations for calculatorJav is here
 
+
+
 public class InputCalc {
 
-  private double testP1;
-  private double testP2;
-
-  public void setNum1(double num1) {
-    num1 = testP1;
-  }
-
-  public double getNum1(double num1) {
-    return num1;
-  }
-
-  public void setNum2(double num2) { // setters
-    num2 = testP2;
-  }
-
-  public double getNum2(double num2) { // getters
-    return num2;
-  }
-
-  public static double addOper(double num1, double num2) {
-    double sumResult = num1 + num2;
+  public static double addOper(double in1, double in2) {
+    double sumResult = in1 + in2; //addition operator adds both inputs together
     return sumResult;
   }
 
   public static double subOper(double in1, double in2) {
-    double diffResult = in1 - in2;
+    double diffResult = in1 - in2; //subtraction operator to find difference
     return diffResult;
   }
 
   public static double mulOper(double in1, double in2) {
-    double prodResult = in1 * in2;
+    double prodResult = in1 * in2; //multiple operator to find product
     return prodResult;
   }
 
   public static double divOper(double in1, double in2) {
-    if (in2 == 0) {
+    if (in2 == 0) { //diving by 0 is bad so this prevents it from doing so.
       System.out.println("Please do not divide by 0, defaulting to 0");
-      return 0;
-    }
+      return 0; //returning to 0 so we don't do division of 0.
+    } else {
     double quoResult = in1 / in2;
     return quoResult;
+    }
   }
 
 
@@ -55,23 +39,17 @@ public class InputCalc {
 
   public static double randOper(double in1, double in2) {
     double randResult = (Math.random() * ((in2 - in1) + 1)) + in1;
-    return randResult;
+    return randResult; //Function above finds random number between both inputs.
   }
   
-  public static double factOper(double in1, double in2) {
+  public static double factOper(double in1) {
    double iInt = 1;
-   double factorial = 1;
-    while(in1 <= in2) {
+   double factorial = 1;  //Factorial function using while loops.
+    while(iInt <= in1) { // We can use for loops for the factorial as well.
       factorial = factorial * iInt;
       iInt++;
     }
     return factorial;
   }
-  
-
-  public InputCalc(double numNum1, double numNum2) {
-    testP1 = numNum1;
-    testP2 = numNum2;
-  }
-
 }
+  

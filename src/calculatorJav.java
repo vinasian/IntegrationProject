@@ -19,9 +19,12 @@ public class calculatorJav {
       double realNum1, realNum2;
       realNum1 = Double.parseDouble(num1);
       realNum2 = Double.parseDouble(num2);
+      double arr[] = {realNum1, realNum2}; // the array has the parsed numbers in its array
+      double nthTerm = arr.length; // nth is how long the array is
       System.out.println("Enter the corresponding number for the operation. \n" + "1. Addition \n"
           + "2. Substraction \n" + "3. Multiplication \n" + "4. Division \n" + "5. Powers \n"
-          + "6. Random Number (between input values) \n" + "7. Factorials \n");
+          + "6. Random Number (between input values) \n" + "7. Factorials \n"
+          + "8. Variance and Standard Deviation (Population) \n");
       int choose;
       try {
         choose = input.nextInt();
@@ -45,13 +48,21 @@ public class calculatorJav {
             System.out.println(stateAns + InputCalc.randOper(realNum1, realNum2));
             break;
           case 7:
-            System.out.println(stateAns + InputCalc.factOper(realNum1, realNum2));
+            System.out.println(stateAns + InputCalc.factOper(realNum1)); // calculates factorial for
+                                                                         // 1st input
+            System.out.println(stateAns + InputCalc.factOper(realNum2)); // calculates factorial for
+                                                                         // 2nd input
+            break;
+          case 8:
+            System.out.println(stateAns + StatsCalc.varOp(arr, nthTerm)); // mean is just a means to
+                                                                          // find variance.
+            System.out.println(stateAns + StatsCalc.stdDev(arr, nthTerm));
             break;
           default:
-            System.out.println("Illegal Operation");
+            System.out.println("Illegal Operation"); //defaults only when a number that is not not the case list.
             input.close();
         }
-        
+
       } catch (InputMismatchException charAndSym) {
         System.out.println("You can't input characters or symbols. Although - and + will work \n"
             + "This includes characters with numbers or symbols with numbers I.E. 5^ or 2x");
@@ -62,7 +73,8 @@ public class calculatorJav {
 
 
     else {
-      System.out.println("The inputs are invalid");
+      System.out.println("The inputs are invalid, please don't use characters or symbols.\n"
+          + "Although, negative numbers can be represented via -4 or -20.");
       input.close();
     }
   }

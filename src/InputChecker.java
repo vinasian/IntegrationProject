@@ -1,3 +1,8 @@
+// Vincent Nguyen
+// InputChecker Class
+// Checks for numbers. If symbols and characters sent, it'll return false.
+// however, an exception is any number having - before itself IE -3
+
 
 public class InputChecker {
 
