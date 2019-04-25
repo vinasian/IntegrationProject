@@ -35,7 +35,7 @@ public class CalculatorJav {
       num2 = input.nextLine();
       try {
         if (InputCheckerValidator.realNumber(num1) == true && InputCheckerValidator.realNumber(num2) == true) {
-          realNum1 = Double.parseDouble(num1);
+          realNum1 = Double.parseDouble(num1); 
           realNum2 = Double.parseDouble(num2);
           System.out.println(prop.getProperty("calculator.operator.message"));
           int choose = input.nextInt();
@@ -45,6 +45,7 @@ public class CalculatorJav {
           double nthTerm = arr.length;     
           switch (choose) {
             case 1:
+              //addOper is a method call. realNum1 and realNum2 are the arguments.
               System.out.println(OperationCalculatorClass.addOper(realNum1, realNum2));
               break;
             case 2:

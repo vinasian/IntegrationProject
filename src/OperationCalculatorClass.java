@@ -26,14 +26,15 @@ public class OperationCalculatorClass {
 
   public OperationCalculatorClass(double n1) {
     this.setNum1(n1);
-    this.setNum1(0);
+    this.setNum2(0);
   }
   
   public OperationCalculatorClass(double n1, double n2) {
     this.setNum1(n1);
-    this.setNum1(n2);
+    this.setNum2(n2);
   }
-
+  
+  //parameters in this case is in1 and in2.
   public static double addOper(double in1, double in2) {
     double sumResult = in1 + in2; //addition operator adds both inputs together
     return sumResult;
