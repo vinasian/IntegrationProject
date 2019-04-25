@@ -27,6 +27,9 @@ public class CalculatorJav {
     Scanner input = new Scanner(System.in);
     System.out.println("Hello Human! \n");
     Properties prop = new Properties();
+    
+    //loads message.properties so calcator.messages work
+    
     prop.load(CalculatorJav.class.getClassLoader().getResourceAsStream("messages/messages.properties"));
     do {
       System.out.println(prop.getProperty("calculator.input.message"));

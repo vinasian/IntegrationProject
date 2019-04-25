@@ -3,7 +3,6 @@
 //Calculates mean, then variance, then standard deviation
 //Variance is the hardest part of this function
 
-
 public class StatsCalc {
     
       // method for finding variance
