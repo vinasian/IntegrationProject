@@ -28,7 +28,7 @@ public class CalculatorJav {
     System.out.println("Hello Human! \n");
     Properties prop = new Properties();
     
-    //loads message.properties so calcator.messages work
+    //loads message.properties so calcator.messages work, thanks Nathan!
     
     prop.load(CalculatorJav.class.getClassLoader().getResourceAsStream("messages/messages.properties"));
     do {
