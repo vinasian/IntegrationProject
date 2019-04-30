@@ -2,6 +2,8 @@
 //Statistic Calculation Class
 //Calculates mean, then variance, then standard deviation
 //Variance is the hardest part of this function
+//Geeks for Geeks
+
 
 public class StatsCalc {
     
@@ -10,17 +12,17 @@ public class StatsCalc {
       {
           // Computing average/mean
           double sum = 0;
-           
+          
           for (int i = 0; i < n; i++)
               sum += a[i];
           double mean = (double)sum/(double)n;
        
           // Computing sum squared differences with the mean
-          double sqrDiff = 0;
+          double squareRootDifference = 0;
           for (int i = 0; i < n; i++) 
-              sqrDiff += (a[i] - mean) * (a[i] - mean);
+              squareRootDifference += (a[i] - mean) * (a[i] - mean);
            
-          return (double)sqrDiff/n;
+          return (double)squareRootDifference/n;
       }
        
       static double stdDev(double arr[], double n) 
