@@ -9,7 +9,8 @@ public class InputCheckerValidator {
   public static boolean realNumber(String testNum1) {
     try {
     //Parses inputs, if unable to be parsed, exceptions appear
-      Double.parseDouble(testNum1);  
+      Double.parseDouble(testNum1); 
+      
     } catch (Exception Unk) {
       return false;
     }

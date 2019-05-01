@@ -66,39 +66,40 @@ public class CalculatorJav {
           realNum2 = Double.parseDouble(num2);
           System.out.println(prop.getProperty("calculator.operator.message"));
           int choose = input.nextInt();
-
+          
           // the array has the parsed numbers in itself
           double arr[] = {realNum1, realNum2};
           double nthTerm = arr.length;
+          
+          OperationCalculatorClass op = new OperationCalculatorClass(realNum1, realNum2);
           switch (choose) {
             case 1:
               // addOper is a method call. realNum1 and realNum2 are the arguments.
-              System.out.println(OperationCalculatorClass.addOper(realNum1, realNum2));
+              System.out.println(op.addOper(realNum1, realNum2));
               break;
             case 2:
-              System.out.println(OperationCalculatorClass.subOper(realNum1, realNum2));
+              System.out.println(op.subOper(realNum1, realNum2));
               break;
             case 3:
-              System.out.println(OperationCalculatorClass.mulOper(realNum1, realNum2));
+              System.out.println(op.mulOper(realNum1, realNum2));
               break;
             case 4:
               OperationCalculatorClass Remain = new RemainderClass(realNum1, realNum2);
-              OperationCalculatorClass div = new OperationCalculatorClass(realNum1, realNum2);
               System.out.println(
-                  div.divOper(realNum1, realNum2) + " " + Remain.divOper(realNum1, realNum2));
+                  op.divOper(realNum1, realNum2) + " " + Remain.divOper(realNum1, realNum2));
               break;
             case 5:
-              System.out.println(OperationCalculatorClass.powOper(realNum1, realNum2));
+              System.out.println(op.powOper(realNum1, realNum2));
               break;
             case 6:
-              System.out.println(OperationCalculatorClass.randOper(realNum1, realNum2));
+              System.out.println(op.randOper(realNum1, realNum2));
               break;
             case 7:
-              System.out.println(OperationCalculatorClass.factOper(realNum1));
+              System.out.println(op.factOper(realNum1));
               break;
             case 8:
-              System.out
-                  .println(StatsCalc.varOp(arr, nthTerm) + " " + StatsCalc.stdDev(arr, nthTerm));
+              System.out.println(op.varOp(arr, nthTerm) + " "
+                  + op.stdDev(arr, nthTerm));
               break;
             case 9:
               getMeOut = false;
