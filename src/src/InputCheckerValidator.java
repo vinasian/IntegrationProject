@@ -11,7 +11,7 @@ public class InputCheckerValidator {
     //Parses inputs, if unable to be parsed, exceptions appear
       Double.parseDouble(testNum1); 
       
-    } catch (Exception Unk) {
+    } catch (Exception e) {
       return false;
     }
     return true;

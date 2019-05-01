@@ -97,9 +97,10 @@ public class OperationCalculatorClass {
 
   public double factOper(double in1) {
     double iInt = 1;
-    double factorial = 1; // Factorial function using while loops.
-
-    while (iInt <= in1) { // We can use for loops for the factorial as well.
+    double factorial = 1; 
+    
+    // Factorial function using while loops.
+    while (iInt <= in1) {
       factorial = factorial * iInt;
       iInt++;
     }
