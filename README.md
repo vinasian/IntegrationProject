@@ -8,7 +8,7 @@ Used ++,+= and a while loop in factorial method in OperationCalculatorClass
 
 Used switch, if/else statement, do-while loops in CalculatorJav
 
-Used for loops in StatsCalc
+Used for loops in OperationCalculatorClass
 
 Used && and == in if statement in CalculatorJav
 
@@ -32,7 +32,7 @@ Made OperationCaculatorClass with private fields, gets and sets with this access
 
 Remainder Classes uses super accessor
 
-Used arrays to calculate variance and standard deviation.
+Used arrays to calculate variance
 
 Used try and catch to catch input exceptions in CalculatorJav
 
